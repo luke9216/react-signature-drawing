@@ -1,21 +1,21 @@
 {
   "name": "react-signature-drawing",
   "version": "1.0.3",
-  "description": "A React wrapper component around signature_pad. Unopinionated and heavily updated fork of react-signature-pad",
+  "description": "A React wrapper component around signature_pad. Unopinionated and heavily updated fork of react-signature-canvas",
   "main": "build/index.js",
   "files": [
     "src/index.js",
     "build/"
   ],
-  "author": "Anton Gilgur",
+  "author": "Luke Phillips",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/agilgur5/react-signature-canvas",
+  "homepage": "https://github.com/luke9216/react-signature-drawing",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/agilgur5/react-signature-canvas.git"
+    "url": "https://github.com/luke9216/react-signature-drawing.git"
   },
   "bugs": {
-    "url": "https://github.com/agilgur5/react-signature-canvas/issues"
+    "url": "https://github.com/luke9216/react-signature-drawing/issues"
   },
   "keywords": [
     "react",
@@ -29,6 +29,7 @@
     "trim",
     "whitespace",
     "draw",
+    "drawing",
     "pad",
     "wrapper",
     "signature-pad",
@@ -54,7 +55,7 @@
     "trim-canvas": "^0.1.0"
   },
   "devDependencies": {
-    "@agilgur5/changelog-maker": "^3.0.0",
+    "@luke9216/changelog-maker": "^3.0.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^23.6.0",
