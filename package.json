@@ -1,6 +1,6 @@
 {
   "name": "react-signature-drawing",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A React wrapper component around signature_pad. Unopinionated and heavily updated fork of react-signature-canvas",
   "main": "build/index.js",
   "files": [
