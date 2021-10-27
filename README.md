@@ -8,7 +8,7 @@
 <!-- releases / versioning -->
 [![package-json](https://img.shields.io/github/package-json/v/luke9216/react-signature-drawing.svg)](https://npmjs.org/package/react-signature-drawing)
 [![releases](https://img.shields.io/github/tag-pre/luke9216/react-signature-drawing.svg)](https://github.com/luke9216/react-signature-drawing/releases)
-[![commits](https://img.shields.io/github/commits-since/luke9216/react-signature-drawing/v1.0.2.svg)](https://github.com/luke9216/react-signature-drawing/commits/master)
+[![commits](https://img.shields.io/github/commits-since/luke9216/react-signature-drawing/v1.0.3.svg)](https://github.com/luke9216/react-signature-drawing/commits/master)
 <br><!-- downloads -->
 [![dt](https://img.shields.io/npm/dt/react-signature-drawing.svg)](https://npmjs.org/package/react-signature-drawing)
 [![dy](https://img.shields.io/npm/dy/react-signature-drawing.svg)](https://npmjs.org/package/react-signature-drawing)
@@ -18,7 +18,7 @@
 [![build status](https://img.shields.io/travis/luke9216/react-signature-drawing/master.svg)](https://travis-ci.org/luke9216/react-signature-drawing)
 [![code coverage](https://img.shields.io/codecov/c/gh/luke9216/react-signature-drawing/master.svg)](https://codecov.io/gh/luke9216/react-signature-drawing)
 <br>
-[![NPM](https://nodei.co/npm/react-signature-canvas.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.org/package/react-signature-canvas)
+[![NPM](https://nodei.co/npm/react-signature-drawing.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.org/package/react-signature-canvas)
 <br>
 
 This is forked from https://npmjs.org/package/react-signature-canvas and Updated to React 17 as agilgur5 is no longer maintaining.
