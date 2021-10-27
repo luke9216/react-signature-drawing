@@ -1,6 +1,6 @@
 {
-  "name": "react-signature-canvas",
-  "version": "1.0.2",
+  "name": "react-signature-drawing",
+  "version": "1.0.3",
   "description": "A React wrapper component around signature_pad. Unopinionated and heavily updated fork of react-signature-pad",
   "main": "build/index.js",
   "files": [
@@ -12,7 +12,7 @@
   "homepage": "https://github.com/agilgur5/react-signature-canvas",
   "repository": {
     "type": "git",
-    "url": "https://github.com/agilgur5/react-signature-canvas.git"
+    "url": "git+https://github.com/agilgur5/react-signature-canvas.git"
   },
   "bugs": {
     "url": "https://github.com/agilgur5/react-signature-canvas/issues"
@@ -74,5 +74,8 @@
     "style-loader": "^0.13.1",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.10.1"
+  },
+  "directories": {
+    "example": "example"
   }
 }
