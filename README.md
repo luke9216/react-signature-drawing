@@ -3,41 +3,44 @@
   <img height='200' src='https://media.giphy.com/media/KH1emXYVIh1hT6UrrU/giphy.gif' />
 </p>
 
-# react-signature-canvas
+# react-signature-drawing
 
 <!-- releases / versioning -->
-[![package-json](https://img.shields.io/github/package-json/v/agilgur5/react-signature-canvas.svg)](https://npmjs.org/package/react-signature-canvas)
-[![releases](https://img.shields.io/github/tag-pre/agilgur5/react-signature-canvas.svg)](https://github.com/agilgur5/react-signature-canvas/releases)
-[![commits](https://img.shields.io/github/commits-since/agilgur5/react-signature-canvas/v1.0.3.svg)](https://github.com/agilgur5/react-signature-canvas/commits/master)
+[![package-json](https://img.shields.io/github/package-json/v/luke9216/react-signature-drawing.svg)](https://npmjs.org/package/react-signature-drawing)
+[![releases](https://img.shields.io/github/tag-pre/luke9216/react-signature-drawing.svg)](https://github.com/luke9216/react-signature-drawing/releases)
+[![commits](https://img.shields.io/github/commits-since/luke9216/react-signature-drawing/v1.0.2.svg)](https://github.com/luke9216/react-signature-drawing/commits/master)
 <br><!-- downloads -->
-[![dt](https://img.shields.io/npm/dt/react-signature-canvas.svg)](https://npmjs.org/package/react-signature-canvas)
-[![dy](https://img.shields.io/npm/dy/react-signature-canvas.svg)](https://npmjs.org/package/react-signature-canvas)
-[![dm](https://img.shields.io/npm/dm/react-signature-canvas.svg)](https://npmjs.org/package/react-signature-canvas)
-[![dw](https://img.shields.io/npm/dw/react-signature-canvas.svg)](https://npmjs.org/package/react-signature-canvas)
+[![dt](https://img.shields.io/npm/dt/react-signature-drawing.svg)](https://npmjs.org/package/react-signature-drawing)
+[![dy](https://img.shields.io/npm/dy/react-signature-drawing.svg)](https://npmjs.org/package/react-signature-drawing)
+[![dm](https://img.shields.io/npm/dm/react-signature-drawing.svg)](https://npmjs.org/package/react-signature-drawing)
+[![dw](https://img.shields.io/npm/dw/react-signature-drawing.svg)](https://npmjs.org/package/react-signature-drawing)
 <br><!-- status / activity -->
-[![build status](https://img.shields.io/travis/agilgur5/react-signature-canvas/master.svg)](https://travis-ci.org/agilgur5/react-signature-canvas)
-[![code coverage](https://img.shields.io/codecov/c/gh/agilgur5/react-signature-canvas/master.svg)](https://codecov.io/gh/agilgur5/react-signature-canvas)
+[![build status](https://img.shields.io/travis/luke9216/react-signature-drawing/master.svg)](https://travis-ci.org/luke9216/react-signature-drawing)
+[![code coverage](https://img.shields.io/codecov/c/gh/luke9216/react-signature-drawing/master.svg)](https://codecov.io/gh/luke9216/react-signature-drawing)
 <br>
 [![NPM](https://nodei.co/npm/react-signature-canvas.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.org/package/react-signature-canvas)
 <br>
+
+This is forked from https://npmjs.org/package/react-signature-canvas and Updated to React 17 as agilgur5 is no longer maintaining.
+
 A React wrapper component around [signature_pad](https://github.com/szimek/signature_pad).
 
 Originally, this was just an _unopinionated_ fork of [react-signature-pad](https://github.com/blackjk3/react-signature-pad) that did not impose any styling or wrap any other unwanted elements around your canvas -- it's just a wrapper around a single canvas element!
 Hence the naming difference.
 Nowadays, this repo / library has significantly evolved, introducing new features, fixing various bugs, and now wrapping the upstream `signature_pad` to have its updates and bugfixes baked in.
 
-This fork also allows you to directly pass [props](#props) to the underlying canvas element, has new, documented [API methods](#api) you can use, has new, documented [props](#props) you can pass to it, has a [live demo](https://agilgur5.github.io/react-signature-canvas/), has a [CodeSandbox playground](https://codesandbox.io/s/github/agilgur5/react-signature-canvas/tree/cra-example), and has [100% test coverage](https://codecov.io/gh/agilgur5/react-signature-canvas).
+This fork also allows you to directly pass [props](#props) to the underlying canvas element, has new, documented [API methods](#api) you can use, has new, documented [props](#props) you can pass to it, has a [live demo](https://luke9216.github.io/react-signature-drawing/), has a [CodeSandbox playground](https://codesandbox.io/s/github/luke9216/react-signature-drawing/tree/cra-example), and has [100% test coverage](https://codecov.io/gh/luke9216/react-signature-drawing).
 
 ## Installation
 
-`npm i -S react-signature-canvas`
+`npm i -S react-signature-drawing`
 
 ## Usage
 
 ```javascript
 import React from 'react'
 import ReactDOM from 'react-dom'
-import SignatureCanvas from 'react-signature-canvas'
+import SignatureCanvas from 'react-signature-drawing'
 
 ReactDOM.render(
   <SignatureCanvas penColor='green'
@@ -95,7 +98,7 @@ All API methods require a ref to the SignatureCanvas in order to use and are ins
 - `on()`: `void`, rebinds all event handlers
 - `getCanvas()`: `canvas`, returns the underlying canvas ref.
   Allows you to modify the canvas however you want or call methods such as `toDataURL()`
-- `getTrimmedCanvas()`: `canvas`, creates a copy of the canvas and returns a [trimmed version](https://github.com/agilgur5/trim-canvas) of it, with all whitespace removed.
+- `getTrimmedCanvas()`: `canvas`, creates a copy of the canvas and returns a [trimmed version](https://github.com/luke9216/trim-canvas) of it, with all whitespace removed.
 - `getSignaturePad()`: `SignaturePad`, returns the underlying SignaturePad reference.
 
 The API methods are _mostly_ just wrappers around [`signature_pad`'s API](https://github.com/szimek/signature_pad#api).
@@ -108,7 +111,7 @@ You can interact with the example in a few different ways:
 
 1. Run `npm start` and navigate to [http://localhost:8080/](http://localhost:8080/).<br>
 Hosted locally via the [`example/`](example/) directory
-1. [View the live demo here](https://agilgur5.github.io/react-signature-canvas/).<br>
-Hosted via the [`gh-pages` branch](https://github.com/agilgur5/react-signature-canvas/tree/gh-pages), a standalone version of the code in [`example/`](example/)
-1. [Play with the CodeSandbox here](https://codesandbox.io/s/github/agilgur5/react-signature-canvas/tree/cra-example).<br>
-Hosted via the [`cra-example` branch](https://github.com/agilgur5/react-signature-canvas/tree/gh-pages), a standalone version using [Create React App](https://github.com/facebook/create-react-app).
+1. [View the live demo here](https://luke9216.github.io/react-signature-drawing/).<br>
+Hosted via the [`gh-pages` branch](https://github.com/luke9216/react-signature-drawing/tree/gh-pages), a standalone version of the code in [`example/`](example/)
+1. [Play with the CodeSandbox here](https://codesandbox.io/s/github/luke9216/react-signature-drawing/tree/cra-example).<br>
+Hosted via the [`cra-example` branch](https://github.com/luke9216/react-signature-drawing/tree/gh-pages), a standalone version using [Create React App](https://github.com/facebook/create-react-app).
